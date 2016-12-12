@@ -7,11 +7,12 @@
     <script type="text/javascript" src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> -->
 
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="./css/index.css">
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
     <script type="text/javascript" src="js/index.js"></script>
-
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Miam App</title>
   </head>
@@ -31,32 +32,45 @@
           <div role="main" class="ui-content">
             <ul data-role="listview">
               <li>
-                <a href="#">
-                  <img src="./img/ticket-jeune.png">
+                  <img src="./img/ticket-jaune.png">
+
                   <h2>Ticket Jaune </h2>
                   <p><!--Prix-->2.50€</p>
-                </a>
-                <a href="#">Some Text</a>
+                  <div>
+                    <button class="ui-btn ui-icon-arrow-l ui-btn-icon-left btn-ticket" onclick="addY()"></button>
+                    <p id="numY">0</p>
+                    <button class="ui-btn ui-icon-arrow-r ui-btn-icon-left btn-ticket" onclick="removeY()"></button>
+                  </div>
+
               </li>
               <li>
-                <a href="#">
+
                   <img src="./img/ticket-vert.png">
                   <h2>Ticket Vert</h2>
                   <p><!--Prix-->3€</p>
-                </a>
-                <a href="#">Some Text</a>
+                  <div>
+                    <button class="ui-btn ui-icon-arrow-l ui-btn-icon-left btn-ticket" onclick="addVE()"></button>
+                    <p id="numVE">0</p>
+                    <button class="ui-btn ui-icon-arrow-r ui-btn-icon-left btn-ticket" onclick="removeVE()"></button>
+                  </div>
+
               </li>
               <li>
-                <a href="#">
-                  <img src="./img/ticket-violer.png">
+
+                  <img src="./img/ticket-violet.png">
                   <h2>Ticket Violet</h2>
                   <p><!--Prix-->3.50€</p>
-                </a>
-                <a href="#">Some Text</a>
+                  <div>
+                    <button class="ui-btn ui-icon-arrow-l ui-btn-icon-left btn-ticket" onclick="addVI()"></button>
+                    <p id="numVI">0</p>
+                    <button class="ui-btn ui-icon-arrow-r ui-btn-icon-left btn-ticket" onclick="removeVI()"></button>
+                  </div>
+
+
               </li>
               </br>
 
-              <a href="#anylink" class="ui-btn">Valider</a>
+              <button class="ui-btn">Valider</button>
             </ul>
           </div>
       </div>
