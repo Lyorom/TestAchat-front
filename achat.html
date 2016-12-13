@@ -123,9 +123,65 @@
           <div data-role="header">
               <a href="#achat" class="ui-btn ui-icon-arrow-l ui-btn-icon-left">Retour</a>
               <h1>Paiement</h1>
-              <a  class="ui-btn ui-corner-all ui-icon-refresh ui-btn-icon-notext">Refresh</a>
-
           </div>
+          <form method="post" action="demoform.asp">
+              <div class="ui-field-contain">
+                  <label for="creditCardIssuer">Type de carte de paiement :</label>
+                  <select name="creditCardIssuer" id="creditCardIssuer">
+                      <option value="V0">Visa / Electron</option>
+                      <option value="M0">Eurocard / MasterCard</option>
+                      <option value="A0">American Express</option>
+                      <option value="F0">Carte Bancaire</option>
+                      <option value="R0">Carte Aurore</option>
+                  </select>
+                  <label for="addCreditCardNumber">Numéro de carte de paiement :</label>
+                  <input type="text" name="addCreditCardNumber" id="addCreditCardNumber" autocomplete="off">
+
+                  <label for="card-name">Nom complet du détenteur de la carte:</label>
+                  <input type="text" name="card-name" id="card-name" autocomplete="off">
+
+                  <label for="newCreditCardMonth">Date d'expiration :</label>
+                  <select name="newCreditCardMonth" title="mois" id="newCreditCardMonth">
+                      <option value="01" selected="selected">01</option>
+                      <option value="02" >02</option>
+                      <option value="03" >03</option>
+                      <option value="04" >04</option>
+                      <option value="05" >05</option>
+                      <option value="06" >06</option>
+                      <option value="07" >07</option>
+                      <option value="08" >08</option>
+                      <option value="09" >09</option>
+                      <option value="10" >10</option>
+                      <option value="11" >11</option>
+                      <option value="12" >12</option>
+                  </select>
+                  <select name="newCreditCardYear" title="année" id="newCreditCardYear">
+                      <option value="2016" selected="selected">2016</option>
+                      <option value="2017" >2017</option>
+                      <option value="2018" >2018</option>
+                      <option value="2019" >2019</option>
+                      <option value="2020" >2020</option>
+                      <option value="2021" >2021</option>
+                      <option value="2022" >2022</option>
+                      <option value="2023" >2023</option>
+                      <option value="2024" >2024</option>
+                      <option value="2025" >2025</option>
+                      <option value="2026" >2026</option>
+                      <option value="2027" >2027</option>
+                      <option value="2028" >2028</option>
+                      <option value="2029" >2029</option>
+                      <option value="2030" >2030</option>
+                      <option value="2031" >2031</option>
+                      <option value="2032" >2032</option>
+                      <option value="2033" >2033</option>
+                      <option value="2034" >2034</option>
+                      <option value="2035" >2035</option>
+                      <option value="2036" >2036</option>
+                      <option value="2037" >2037</option>
+                  </select>
+
+              </div>
+          </form>
       </div>
 
   </body>
