@@ -6,16 +6,6 @@ var prix1 = 2.50;
 var prix2 = 3;
 var prix3 = 3.50;
 
-//GET LOCALSTOARAGE
-var jaune = localStorage.getItem('jaune');
-var vert = localStorage.getItem('vert');
-var violet = localStorage.getItem('violet');
-//TOTAL
-var total1 = prix1 * jaune;
-var total2 = prix2 * vert;
-var total3 = prix3 * violet;
-//PRIX FINAL
-var totalfinal = total1 + total2 + total3;
 
 
 //recupe prix pour afficher
@@ -25,62 +15,62 @@ function prix(){
     document.getElementById('prix3').innerHTML = prix3 + '€';
 }
 //ticket jaune
-var numbre1 = 0;
+var nombre1 = 0;
 
 function add1() {
-    numbre1++;
-    document.getElementById('num1').innerHTML = numbre1;
+    nombre1++;
+    document.getElementById('num1').innerHTML = nombre1;
 }
 function remove1() {
-    if (numbre1<1) {
-        numbre1 = 0;
+    if (nombre1<1) {
+        nombre1 = 0;
     }
     else {
-        numbre1--;
-        document.getElementById('num1').innerHTML = numbre1;
+        nombre1--;
+        document.getElementById('num1').innerHTML = nombre1;
     }
 }
 
 //ticket vert
-var numbre2 = 0;
+var nombre2 = 0;
 
 function add2() {
-    numbre2++;
-    document.getElementById('num2').innerHTML = numbre2;
+    nombre2++;
+    document.getElementById('num2').innerHTML = nombre2;
 }
 function remove2() {
-    if (numbre2<1) {
-        numbre2 = 0;
+    if (nombre2<1) {
+        nombre2 = 0;
     }
     else {
-        numbre2--;
-        document.getElementById('num2').innerHTML = numbre2;
+        nombre2--;
+        document.getElementById('num2').innerHTML = nombre2;
     }
 }
 
 //ticket violet
-var numbre3 = 0;
+var nombre3 = 0;
 
 function add3() {
-    numbre3++;
-    document.getElementById('num3').innerHTML = numbre3;
+    nombre3++;
+    document.getElementById('num3').innerHTML = nombre3;
 }
 
 function remove3() {
-    if (numbre3<1) {
-        numbre3 = 0;
+    if (nombre3<1) {
+        nombre3 = 0;
     }
     else {
-        numbre3--;
-        document.getElementById('num3').innerHTML = numbre3;
+        nombre3--;
+        document.getElementById('num3').innerHTML = nombre3;
     }
 }
 
-//ENREGISTRE
-function enregistre() {
-    localStorage.setItem('jaune', numbre1);
-    localStorage.setItem('vert', numbre2);
-    localStorage.setItem('violet', numbre3);
+//set localStorage
+function save() {
+    localStorage.setItem('jaune', nombre1);
+    localStorage.setItem('vert', nombre2);
+    localStorage.setItem('violet', nombre3);
 }
 //PANIER
 function panier() {
@@ -97,3 +87,15 @@ function panier() {
 
     document.getElementById('totalfinal').innerHTML = 'TOTAL: ' + totalfinal +'€';
 }
+
+//GET LOCALSTOARAGE
+var jaune = localStorage.getItem('jaune');
+var vert = localStorage.getItem('vert');
+var violet = localStorage.getItem('violet');
+
+//TOTAL
+var total1 = prix1 * jaune;
+var total2 = prix2 * vert;
+var total3 = prix3 * violet;
+//PRIX FINAL
+var totalfinal = total1 + total2 + total3;
